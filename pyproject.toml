@@ -3,7 +3,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "remember"
+name = "quickremember"
 authors = [
 	{name = "Trevin Jones", email = "trevindjones@gmail.com"},
 ]
@@ -20,12 +20,12 @@ dependencies = [
 dynamic = ["version", "readme"]
 
 [tool.setuptools.dynamic]
-version = {attr = "remember.VERSION"}
+version = {attr = "quickremember.VERSION"}
 readme = {file = ["README.md"]}
 
 [tool.setuptools.packages]
 find = {}
 
 [project.scripts]
-remember = "remember.remember:consolemain"
-forget = "remember.forget:consolemain"
+remember = "quickremember.remember:consolemain"
+forget = "quickremember.forget:consolemain"
