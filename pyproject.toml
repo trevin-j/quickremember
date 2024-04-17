@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "remember"
+authors = [
+	{name = "Trevin Jones", email = "trevindjones@gmail.com"},
+]
+description = "Simple CLI application to remember simple things."
+requires-python = ">=3.7"
+keywords = ["notes", "cli", "linux"]
+license = {text = "MIT"}
+classifiers = [
+	"Programming Language :: Python :: 3",
+]
+dependencies = [
+	"thefuzz",
+]
+dynamic = ["version", "readme"]
+
+[tool.setuptools.dynamic]
+version = {attr = "remember.VERSION"}
+readme = {file = ["README.md"]}
+
+[tool.setuptools.packages]
+find = {}
+
+[project.scripts]
+remember = "remember.remember:consolemain"
+forget = "remember.forget:consolemain"
