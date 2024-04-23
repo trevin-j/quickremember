@@ -76,6 +76,6 @@ Some ways to combat this would be getting input where it does not display what y
 
 ## Potential future work
 
-- [ ] Separate encrypted data storage
-- [ ] Secure input for data and key entry
-- [ ] Some search improvements 
+[ ] Separate encrypted data storage
+[ ] Secure input for data and key entry
+[ ] Some search improvements 
